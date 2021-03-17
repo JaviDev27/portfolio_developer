@@ -149,8 +149,71 @@
       </section>
     </main>
 
+    <form action="">
+      <h2>Contact</h2>
+      <p>Have a question or want to work togetter?</p>
+
+      <div class="form-container">
+        <label for="name">
+          <p>Name</p>
+          <input
+            type="text"
+            class="name input--style"
+            id="name"
+            placeholder="Name"
+            required
+            autocomplete="name"
+          />
+        </label>
+
+        <label for="email">
+          <p>Email</p>
+          <input
+            type="email"
+            class="email input--style"
+            id="email"
+            placeholder="email@mail.com"
+            required
+            autocomplete="email"
+          />
+        </label>
+
+        <label for="message">
+          <p>Message</p>
+          <textarea
+            class="input--style"
+            name="message"
+            id="message"
+            placeholder="Your message"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </label>
+
+        <input class="submit" type="submit" value="Submit" />
+      </div>
+    </form>
+
     <footer>
-      <p>SAAS</p>
+      <div class="social-media">
+        <picture>
+          <img src="./img/icons/linkedin.svg" alt="linkedin" />
+        </picture>
+
+        <picture>
+          <img src="./img/icons/twitter.svg" alt="linkedin" />
+        </picture>
+
+        <picture>
+          <img src="./img/icons/github_white.svg" alt="linkedin" />
+        </picture>
+
+        <picture>
+          <img src="./img/icons/instagram.svg" alt="linkedin" />
+        </picture>
+      </div>
+
+      <p>Make by &#10084;&#65039; by Javier Manobanda</p>
     </footer>
   </body>
 </html>
