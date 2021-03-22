@@ -25,7 +25,9 @@ body{
 header{
     display: flex;
     width: 100%;
+    height: 64px;
     justify-content: flex-end;
+    align-items: center;
     background-color: #152B4B;
 }
 
@@ -43,9 +45,9 @@ header .header-menuIcon{
 }
 
 .header-menuIcon img{
-    margin: auto;
     height: 25px;
     width: 30px;
+    margin: auto;
 }
 
 main .Init-container{
@@ -55,7 +57,7 @@ main .Init-container{
 
 .hello{
     width: 100%;
-    height: auto;
+    height: calc(100vh - 20vh);
     color: var(--white_color);
     padding-top: 1.6rem;
 }
@@ -84,7 +86,7 @@ main .Init-container{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-image: url("../img/backgrounds/font_about.svg");
     background-size:cover; 
     background-repeat: no-repeat; 
@@ -285,7 +287,7 @@ form{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: calc(100vh - 150px);
     background-image: url("../img/backgrounds/fontform.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -324,13 +326,14 @@ form > p{
 }
 
 .input--style{
+    padding: 0 1rem;
     width: 100%;
     background-color: var(--white_color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
     outline: none;
-    padding: 0 1rem;
+    font-family: 'Open Sans', sans-serif;
 }
 .form-container input{
     margin-bottom: 1.4rem;
@@ -340,6 +343,7 @@ form > p{
 
 .form-container textarea{
     width: 100%;
+    height: 150px;
     padding-top: 1rem;
 }
 
