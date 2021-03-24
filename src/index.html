@@ -60,7 +60,7 @@
             </p>
           </div>
 
-          <button class="btn-Download-cv">Download CV</button>
+          <button class="btn-Download-cv" id="download_cv">Download CV</button>
         </section>
       </div>
 
@@ -164,7 +164,7 @@
       </section>
     </main>
 
-    <form action="" id="Contact">
+    <form id="Contact">
       <h2>Contact</h2>
       <p>Have a question or want to work togetter?</p>
 
@@ -175,6 +175,7 @@
             type="text"
             class="name input--style"
             id="name"
+            name="name"
             placeholder="Name"
             required
             autocomplete="name"
@@ -187,6 +188,7 @@
             type="email"
             class="email input--style"
             id="email"
+            name="email"
             placeholder="email@mail.com"
             required
             autocomplete="email"
@@ -199,6 +201,7 @@
             class="input--style"
             name="message"
             id="message"
+            name="message"
             placeholder="Your message"
             cols="30"
             rows="10"
@@ -247,4 +250,39 @@
       <p>Make with &#10084;&#65039; by Javier Manobanda</p>
     </footer>
   </body>
+
+  <script src="./js/index.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      const userId = "user_Po7ItWHY653wWASNZDZJZ";
+      emailjs.init(userId);
+    })();
+  </script>
+
+  <script type="text/javascript">
+    window.onload = function () {
+      const formContact = document.getElementById("Contact");
+      formContact.addEventListener("submit", (event) => {
+        event.preventDefault();
+        //debugger;
+        emailjs
+          .sendForm(
+            "service_ufbjw2i",
+            "template_r3q5vio",
+            "Contact",
+            "user_Po7ItWHY653wWASNZDZJZ"
+          )
+          .then(function () {
+            console.log("Success");
+          })
+          .catch(function () {
+            console.log("Fail");
+          });
+      });
+    };
+  </script>
 </html>
