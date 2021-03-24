@@ -16,6 +16,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -25,6 +26,7 @@ body{
 header{
     position: fixed;
     display: flex;
+    z-index: 1;
     width: 100%;
     height: 64px;
     align-items: center;
@@ -81,7 +83,7 @@ header{
 
 .menu{
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: 0px;
     display: flex;
     flex-direction: column;
@@ -90,11 +92,14 @@ header{
     width: 100%;
     list-style-type: none;
     color: var(--white_color);
+    font-size: 1.8rem;
 }
 
 .menu a{
+    width: 100%;
     color: var(--white_color);
     text-decoration: none;
+    text-align: center;
 }
 
 .menu-toggle:checked + .menu-button-container .menu-button::before {
