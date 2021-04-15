@@ -252,6 +252,7 @@
   </body>
 
   <script src="./js/index.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
@@ -277,10 +278,10 @@
             "user_Po7ItWHY653wWASNZDZJZ"
           )
           .then(function () {
-            console.log("Success");
+            swal("Good Job", "The mail was send", "success");
           })
           .catch(function () {
-            console.log("Fail");
+            swal("Fail", "The mail wasn`t send", "error");
           });
       });
     };

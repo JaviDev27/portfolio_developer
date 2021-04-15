@@ -252,6 +252,10 @@ main .Init-container{
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.42);
 }
 
+.submit:hover,
+.btn-Download-cv:hover{
+    background-color: #10C9E5;
+}
 
 
 .skills{

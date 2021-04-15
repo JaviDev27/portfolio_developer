@@ -9,6 +9,7 @@
   "author": "Javier Manobanda",
   "license": "MIT",
   "dependencies": {
-    "emailjs-com": "^2.6.4"
+    "emailjs-com": "^2.6.4",
+    "sweetalert": "^2.1.2"
   }
 }
