@@ -301,6 +301,9 @@ main .Init-container{
     width: 100%;
     max-width: 800px;
 }
+
+
+
 .technical-skill h2,
 .soft-skill h2{
     margin-top: 35px;
@@ -349,6 +352,10 @@ main .Init-container{
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
+
+.soft-skill__slicer::-webkit-scrollbar {
+    display: none;
+  }
 
 .soft-skill-item{
     display: flex;
