@@ -159,6 +159,7 @@ main .Init-container{
 }
 
 .hello{
+    display: flex;
     width: 100%;
     height: calc(100vh - 10vh);
     color: var(--white_color);
