@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Portfolio</title>
+    <title>Portfolio Javier Manobanda</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -39,28 +39,33 @@
           <picture class="hello__imagen">
             <img src="./img/images/programmer.svg" alt="" />
             <p>
-              Hello! I’m Javier Manobanda <br />
+              Hello! I’m Javier Manobanda<br />
               I’m full-stack web developer
             </p>
           </picture>
         </section>
 
         <section class="About" id="About">
-          <h2 class="about__title1">Code</h2>
-          <picture class="about__imgAvatar">
-            <img src="./img/images/Avatar.jpg" alt="Avatar" />
-          </picture>
-          <h2 class="about__title2">Mechatronic</h2>
+          <div class="about-container--size">
+            <div class="avatar-container">
+              <h2 class="about__title1">Code</h2>
+              <picture class="about__imgAvatar">
+                <img src="./img/images/Avatar.jpg" alt="Avatar" />
+              </picture>
+              <h2 class="about__title2">Mechatronic</h2>
+            </div>
 
-          <div class="About__text">
-            <p class="About__text--position">I am Javier Manobanda</p>
-            <p class="About__text--position">
-              - Mechatronics and software developer from Ecuador. I love
-              technology and everything related to process automation
-            </p>
+            <div class="About__text">
+              <p class="About__text--position">I am Javier Manobanda</p>
+              <p class="About__text--position">
+                - Mechatronics and software developer from Ecuador. I love
+                technology and everything related to process automation
+              </p>
+              <button class="btn-Download-cv" id="download_cv">
+                Download CV
+              </button>
+            </div>
           </div>
-
-          <button class="btn-Download-cv" id="download_cv">Download CV</button>
         </section>
       </div>
 
@@ -108,29 +113,26 @@
               </div>
 
               <div class="soft-skill-item">
-                <p class="soft-skill-item__title">Teamwork</p>
-                <img src="./img/icons/teamwork.svg" alt="icon-TeamWork" />
+                <p class="soft-skill-item__title">Time</p>
+                <img src="./img/icons/time.svg" alt="icon-time" />
                 <p class="soff-skill__description">
-                  Working well with others makes what you’re working on more
-                  fun, and makes people more likely to help you in the future.
+                  Personality with good time management for project development.
                 </p>
               </div>
 
               <div class="soft-skill-item">
-                <p class="soft-skill-item__title">Teamwork</p>
-                <img src="./img/icons/teamwork.svg" alt="icon-TeamWork" />
+                <p class="soft-skill-item__title">Objective</p>
+                <img src="./img/icons/object.svg" alt="icon-object" />
                 <p class="soff-skill__description">
-                  Working well with others makes what you’re working on more
-                  fun, and makes people more likely to help you in the future.
+                  Work focused on objectives and specific problem solving.
                 </p>
               </div>
 
               <div class="soft-skill-item">
-                <p class="soft-skill-item__title">Teamwork</p>
-                <img src="./img/icons/teamwork.svg" alt="icon-TeamWork" />
+                <p class="soft-skill-item__title">Creative</p>
+                <img src="./img/icons/creativity.svg" alt="icon-creativity" />
                 <p class="soff-skill__description">
-                  Working well with others makes what you’re working on more
-                  fun, and makes people more likely to help you in the future.
+                  Creativity for problem solving and optimization of procedures.
                 </p>
               </div>
             </div>
@@ -201,7 +203,6 @@
             class="input--style"
             name="message"
             id="message"
-            name="message"
             placeholder="Your message"
             cols="30"
             rows="10"

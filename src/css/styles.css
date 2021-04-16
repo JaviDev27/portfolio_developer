@@ -150,6 +150,9 @@ header{
       border-bottom: 1px solid #444;
   }
 
+  .menu li a:hover{
+    color: var(--blue_sky_color);
+  }
 main .Init-container{
     height: auto;
     background: radial-gradient(50% 50% at 50% 50%, #234B7D 0%, #152B4B 100%);
@@ -164,17 +167,22 @@ main .Init-container{
 
 .hello__imagen{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 65px auto;
+
 }
 
 .hello__imagen img{
-    min-width: 300px;
-    margin: 65px auto 3.2rem;
+    width: 50%;
+    min-width: 200px;
+    max-width: 350px;
 }
 
 .hello__imagen p{
-    margin: 0px 5px 0.7rem;
+    margin: 0.9rem auto 0.7rem;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -183,29 +191,44 @@ main .Init-container{
 
 .About{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: url("../img/backgrounds/font_about.svg");
     background-size:cover; 
     background-repeat: no-repeat; 
     color: var(--white_color);
 }
+.about-container--size{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15% auto 0px;
+    width: 100%;
+    max-width: 800px;
+}
+
+
+.avatar-container{
+    margin: 0 auto 0px;
+}
 
 .about__title1{
-    margin-top: 57px;
     margin-bottom: 1.3rem;
     font-size:3.1rem ;
     font-weight: 600;
     line-height: 4.2rem;
+    text-align: center;
+}
+
+.about__imgAvatar{
+    display: flex;
 }
 
 .about__imgAvatar img{
-    height: 228px;
-    width: 228px;
-    margin-bottom: 1.3rem;
+    width: 90%;
+    max-width: 200px;
     border-radius: 114px;
+    margin: 0px auto;
 }
 
 .about__title2{
@@ -213,10 +236,12 @@ main .Init-container{
     font-size: 3.1rem;
     font-weight: 600;
     line-height: 4.2rem;
+    text-align: center;
 }
 
 .About__text{
-    margin-top: 13px;
+    margin: 13px auto 0px;
+    max-width: 450px;
 }
 
 .About__text .About__text--position{
@@ -230,9 +255,10 @@ main .Init-container{
 
 
 .About .btn-Download-cv{
+    display: block;
     height: 47px;
     width: 172px;
-    margin-bottom: 32PX;
+    margin: 0px auto 32px;
     color: var(--black_black_color);
     background-color: var(--blue_sky_color);
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
@@ -262,7 +288,7 @@ main .Init-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: auto;
 }
 
 .technical-skill,
@@ -272,6 +298,7 @@ main .Init-container{
     align-items: center;
     min-width: 320px;
     width: 100%;
+    max-width: 800px;
 }
 .technical-skill h2,
 .soft-skill h2{
@@ -301,7 +328,7 @@ main .Init-container{
     background-color: var(--white_color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    margin: 0px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
 
 }
 
@@ -353,7 +380,9 @@ main .Init-container{
 }
 
 .soft-skill-item img{
-    min-width: 112px;
+    min-width: 100px;
+    max-width: 120px;
+    max-height: 100px;
     margin-bottom: 13px;
 }
 
@@ -377,6 +406,7 @@ main .Init-container{
 
 .project-container{
     width: 93.75%;
+    max-width: 800px;
     height: auto;
     margin: 0px auto 35px;
     display: flex;
@@ -403,7 +433,8 @@ form{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 150px);
+    padding-top: 10%;
+    height: auto;
     background-image: url("../img/backgrounds/fontform.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -430,6 +461,7 @@ form > p{
     display: flex;
     flex-direction: column;
     width: 78.125%;
+    max-width: 400px;
     height: auto;
 }
 
